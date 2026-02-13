@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSC Task Tracker Mobile App – v1.0.0</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    :root { color-scheme: light dark; }
+    * {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-neutral-950 dark:bg-neutral-950 dark:text-white min-h-screen p-6 flex justify-center">
+  <div class="w-full max-w-4xl space-y-10">
+
+    <div class="flex flex-col md:flex-row gap-8 items-start md:items-center">
+      
+      <img src="./assets/icon.png" class="w-28 h-28 rounded-xl border border-neutral-200 dark:border-neutral-800 object-cover" />
+
+      <div class="flex-1 space-y-1">
+        <h1 class="text-3xl font-semibold">SSC Task Tracker</h1>
+        <p class="text-neutral-500 dark:text-neutral-400 text-sm">
+          Version 1.0.0 &middot; February 13, 2026
+        </p>
+        <p class="text-neutral-700 dark:text-neutral-300 text-sm">
+          Built with: React Native
+        </p>
+      </div>
+
+      <button onclick="navigator.share && navigator.share({title: 'SSC Task', url: location.href})"
+        class="px-4 py-2 border border-neutral-400 dark:border-neutral-600 rounded-lg text-sm hover:bg-neutral-100 dark:hover:bg-neutral-800 transition">
+        Share
+      </button>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-semibold mb-3">App Preview</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="./assets/Screenshot_2026-02-13-22-56-09-07_1680b08568f6ab0e989f53f49884bdaa.jpg" class="w-full rounded-xl border border-neutral-200 dark:border-neutral-800 object-cover" />
+        <img src="./assets/Screenshot_2026-02-13-22-55-00-00_1680b08568f6ab0e989f53f49884bdaa.jpg" class="w-full rounded-xl border border-neutral-200 dark:border-neutral-800 object-cover" />
+        <img src="./assets/Screenshot_2026-02-13-22-56-20-53_1680b08568f6ab0e989f53f49884bdaa.jpg" class="w-full rounded-xl border border-neutral-200 dark:border-neutral-800 object-cover" />
+        <img src="./assets/Screenshot_2026-02-13-22-56-17-17_1680b08568f6ab0e989f53f49884bdaa.jpg" class="w-full rounded-xl border border-neutral-200 dark:border-neutral-800 object-cover" />
+        <img src="./assets/Screenshot_2026-02-13-22-56-14-31_1680b08568f6ab0e989f53f49884bdaa.jpg" class="w-full rounded-xl border border-neutral-200 dark:border-neutral-800 object-cover" />
+      </div>
+    </div>
+
+    <div class="border border-neutral-200 dark:border-neutral-800 rounded-xl p-6">
+      <h2 class="text-xl font-semibold mb-3">About This Version</h2>
+      <p class="text-neutral-700 dark:text-neutral-300 text-sm leading-relaxed">
+        Task tracker mobile application designed for Supreme Student Council. This mobile app is intended for capstone/research purposes and not fully published.
+      </p>
+    </div>
+
+    <div class="space-y-4">
+      <h2 class="text-xl font-semibold">Download</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <a href="https://www.mediafire.com/file/yiy38932uyxl6mx/application-6329ce79-fb22-4239-ba70-b9edfb6fef29.apk/file"
+          class="border border-neutral-300 dark:border-neutral-700 rounded-xl p-5 flex items-center gap-4 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition">
+          <img src="./assets/icon.png" class="w-10 h-10" />
+          <div>
+            <p class="font-medium">Download for Android</p>
+            <p class="text-xs text-neutral-500">APK · 79.47 MB</p>
+          </div>
+        </a>
+
+        <a href="#"
+          class="border border-neutral-300 dark:border-neutral-700 rounded-xl p-5 flex items-center gap-4 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition">
+          <img src="./assets/icon.png" class="w-10 h-10" />
+          <div>
+            <p class="font-medium">Download for iOS</p>
+            <p class="text-xs text-neutral-500">TestFlight / IPA • <span class="text-red-400">Unavailable for now</span></p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="border border-neutral-200 dark:border-neutral-800 rounded-xl p-6">
+      <h2 class="text-xl font-semibold mb-3">Changelog</h2>
+      <pre class="text-sm whitespace-pre-wrap text-neutral-700 dark:text-neutral-300">
+         ✅ Login, register, reset password and accouunt management features..
+         ✅ Tasks Assign, View, Update and Delete
+         ✅ Announcements Publish, View, Update and Delete
+         ✅ Notifications
+         ✅ Dark Mode theme
+         ✅ Better UI/UX
+      </pre>
+    </div>
+
+    <footer class="text-center text-neutral-500 dark:text-neutral-600 text-xs mt-10">
+      © Copyright 2026 SSC Task Tracker by ICT12A. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
